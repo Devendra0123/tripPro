@@ -84,7 +84,7 @@ const TripProForm = () => {
       DepartureLocationCode: fromWhere?.LOCATION_CODE,
       ArrivalLocationCode: toWhere?.LOCATION_CODE,
     };
-   const doc = await fetch("http://localhost:3001/tripPro", {
+   const doc = await fetch("http://localhost:3000/api/tripPro", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
