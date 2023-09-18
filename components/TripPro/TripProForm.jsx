@@ -80,7 +80,7 @@ const TripProForm = () => {
   // Fetch search result
   const fetchOneWaySearch = async () => {
     const data = {
-      DepartureTime: "23/10/2023",
+      DepartureTime: "23-10-2023",
       DepartureLocationCode: fromWhere?.LOCATION_CODE,
       ArrivalLocationCode: toWhere?.LOCATION_CODE,
     };
