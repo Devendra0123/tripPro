@@ -90,7 +90,7 @@ const TripProForm = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((res) => res.json());
+    }).then((res) => console.log(res));
     if(doc?.data?.FlightItinerary?.length > 0){
       setResult(doc?.data?.FlightItinerary)
     }

@@ -1,6 +1,11 @@
-import { NextResponse } from "next/server";
+import { middleware } from "@/middleware";
+import { request } from "http";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+  
+  middleware(req);
+
   const { DepartureTime, DepartureLocationCode, ArrivalLocationCode } =
     await req.json();
 
