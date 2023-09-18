@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 // the list of all allowed origins
 const allowedOrigins = [
   'http://localhost:3000', 
+  'http://localhost:3001',
   'https://example-1.com', 
   'https://example-2.com', 
   // ...

@@ -84,7 +84,7 @@ const TripProForm = () => {
       DepartureLocationCode: fromWhere?.LOCATION_CODE,
       ArrivalLocationCode: toWhere?.LOCATION_CODE,
     };
-   const doc = await fetch("http://localhost:3000/api/tripPro", {
+   const doc = await fetch("https://trip-pro.vercel.app/api/tripPro", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
