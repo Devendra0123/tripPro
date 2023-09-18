@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const allowedOrigins = [
+  "https://deligent-travels-npyj.vercel.app",
   "https://trip-pro.vercel.app",
   "http://localhost:3000"
 ];
@@ -21,4 +22,8 @@ export function middleware(request: NextRequest) {
   }
 
   return response
+}
+
+export const config = {
+  matcher: '/api/:path*',
 }
