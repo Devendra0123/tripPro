@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const allowedOrigins = [
-  "https://www.my-frontend.com"
+  "https://trip-pro.vercel.app",
+  "http://localhost:3000"
 ];
 export function middleware(request: NextRequest) {
   
