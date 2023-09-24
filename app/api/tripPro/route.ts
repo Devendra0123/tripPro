@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     ],
     Incremental: "false",
   });
-  console.log(raw);
+
   var requestOptions: any = {
     method: "POST",
     headers: myHeaders,
