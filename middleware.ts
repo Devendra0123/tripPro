@@ -2,8 +2,9 @@ import { NextResponse } from "next/server";
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "http://localhost:3000",
+  "http://localhost:3001",
   "https://www.google.com",
+  "https://deligent-travels-npyj.vercel.app"
 ];
 
 export function middleware(request: Request) {
